@@ -8,9 +8,13 @@ class StudentController extends Controller
 {
     //
 
-    public function viewForm(){
+    public function viewForm()
+    {
         return view('home');
     }
-}
 
-?>
+    public function addStudent(Request $request)
+    {
+        dd($request->all());
+    }
+}

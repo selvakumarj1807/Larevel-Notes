@@ -16,7 +16,7 @@
         <div class="row bg-info py-5">
             <div class="col-6">
                 <h2>Registration</h2>
-                <form action="" method="post">
+                <form action="/addStudent" method="post">
                     <div class="form-group">
                         <label for="name" class="form-label">Name:</label>
                         <input type="text" class="form-control" name="name" required>
@@ -62,6 +62,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-dark">Submit</button>
+                    @csrf
                 </form>
             </div>
             <div class="col-6">

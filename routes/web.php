@@ -31,3 +31,5 @@ Route::get('/about', function () {
 Route::get('/cantact', function () {
     return view('cantact');
 });
+
+Route::post('/addStudent', [StudentController::class, 'addStudent']);
