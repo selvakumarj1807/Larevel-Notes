@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" name="parttime">
+                        <input type="checkbox" class="form-check-input" name="parttime" value="1">
                         <label class="form-check-label" for="parttime">Part-time Student</label>
                     </div>
 

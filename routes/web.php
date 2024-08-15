@@ -29,6 +29,14 @@ Database Setup :
     ----------------------
 
         1. php artisan migrate:fresh
+
+Insert into the table :
+-----------------------
+
+    Create Model file :
+    -------------------
+
+        1. php artisan make:model Student
 -->
 
 <?php
