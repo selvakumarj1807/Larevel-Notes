@@ -50,7 +50,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', [StudentController::class, 'viewForm']);
+Route::get('/home', [StudentController::class, 'viewForm'])->name('home');
 
 Route::get('/about', function () {
     return view('about');

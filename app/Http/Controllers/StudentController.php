@@ -20,5 +20,6 @@ class StudentController extends Controller
         // dd($request->all());
 
         Student::create($request->all());
+        return redirect()->route('home')->with('message', 'Student created Successfully');
     }
 }
