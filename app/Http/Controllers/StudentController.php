@@ -12,7 +12,8 @@ class StudentController extends Controller
 
     public function viewForm()
     {
-        return view('home');
+        $students = Student::all();
+        return view('home',compact('students'));
     }
 
     public function addStudent(Request $request)
