@@ -11,7 +11,9 @@
 <body>
     <div class="container-fluid">
         <div class="row bg-dark p-2">
-            <h3 class="text-white">PHP Project</h3>
+            <a href="/">
+                <h3 class="text-white">PHP Project</h3>
+            </a>
         </div>
         <div class="row bg-info py-5">
             <div class="col-6">
@@ -75,13 +77,17 @@
             <div class="col-6">
                 <h3>Registered Students</h3>
                 @if($students->isNotEmpty())
-                    <ul class="list-group">
-                        @foreach($students as $student)
-                            <li class="list-group-item">{{$student->name}} - {{$student->email}} - {{$student->joined_date}}</li>
-                        @endforeach
-                    </ul>
+                <ul class="list-group">
+                    @foreach($students as $student)
+                    <li class="list-group-item">
+                        {{$student->name}} - {{$student->email}} - {{ \Carbon\Carbon::parse($student->joined_date)->format('d/m/Y') }}
+                        <a href="{{ route('editStudent', $student->id) }}" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="{{ route('deleteStudent', $student->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this student?')">Delete</a>
+                    </li>
+                    @endforeach
+                </ul>
                 @else
-                    <p>No students</p>
+                <p>No students</p>
                 @endif
             </div>
         </div>

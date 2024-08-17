@@ -61,3 +61,9 @@ Route::get('/cantact', function () {
 });
 
 Route::post('/addStudent', [StudentController::class, 'addStudent']);
+
+
+Route::get('/editStudent/{id}', [StudentController::class, 'editStudent'])->name('editStudent');
+Route::post('/updateStudent/{id}', [StudentController::class, 'updateStudent'])->name('updateStudent');
+Route::get('/deleteStudent/{id}', [StudentController::class, 'deleteStudent'])->name('deleteStudent');
+
