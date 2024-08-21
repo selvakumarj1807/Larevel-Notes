@@ -1,0 +1,32 @@
+Laravel :
+---------
+
+1. Project Setup :
+------------------
+
+    1. Php - XAMPP Server
+    2. Composer - Download and run Composer-Setup.exe - it will install the latest composer version whenever it is executed.
+
+    3. Check the Composer version and Php version in CMD
+
+        1. composer -v
+        2. php -v
+
+2. Creating Laravel Project :
+-----------------------------
+
+    1. Select Folder and open in CMD
+    ---------------------------------
+        1. Run the below Command for Creating Laravel Project :
+        -------------------------------------------------------
+
+            1. composer create-project laravel/laravel student-reg
+
+            2. cd student-reg
+
+        2. Run the below Command for run the Laravel Project :
+        ------------------------------------------------------
+
+            1. php artisan serve
+
+     
